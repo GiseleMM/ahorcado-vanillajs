@@ -10,20 +10,21 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
+    <!-- MY STYLE -->
+<link rel="stylesheet" href="style.css">
     <title>Ahorcado</title>
   </head>
   <body>
-    <main class="container w-75 min-vh-100 border align-content-center">
-      <div class="row text-center">
-        <h2>Ahorcado</h2>
+    <main class="container w-75 min-vh-75 align-content-center shadow-lg rounded">
+      <div class="row text-center my-3 bg-danger rounded">
+        <h1 class="text-primary-emphasis">Ahorcado</h1>
       </div>
-      <div class="row">
+      <div class="row my-3 justify-content-between">
         <div class="col">
           <div id="palabra"></div>
         </div>
         <div class="col">
-          <h3 id="intentos">INTENTO N°5</h3>
+          <h3 id="intentos" class="text-danger">Intentos: 5</h3>
         </div>
       </div>
       <div class="row d-none" id="mensaje">
@@ -36,6 +37,7 @@
         ></div>
         <div class="col">
           <img
+          class="rounded"
             src="asset/ahorcado.gif"
             alt=""
             srcset=""
@@ -45,8 +47,8 @@
           />
         </div>
       </div>
-      <div class="row w-50 justify-content-center" id="nuevaPalabra">
-        <button type="button" class="btn btn-outline-success">
+      <div class="row  justify-content-center m-3" id="nuevaPalabra">
+        <button type="button" class="btn btn-outline-danger w-50">
           Nueva Palabra
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +69,17 @@
         </button>
       </div>
     </main>
+
+    <div class="container">
+      <footer class="py-1 my-1">
+        <ul class="nav justify-content-center border-bottom border-danger pb-3 mb-3">
+          <li class="nav-item"><a href="https://github.com/GiseleMM/ahorcado-vanillajs.git" class="nav-link px-2 text-danger" target="_blank">GITHUB</a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/in/gisele-medina-89918a2a5/" class="nav-link px-2 text-danger" target="_blank">LINKEDIN</a></li>
+        </ul>
+        <p class="text-center text-danger">© 2024 </p>
+      </footer>
+    </div>
+  
     <!-- BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
